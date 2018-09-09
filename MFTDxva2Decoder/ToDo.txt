@@ -1,0 +1,9 @@
+//----------------------------------------------------------------------------------------------
+// ToDo
+//----------------------------------------------------------------------------------------------
+
+- Handle differents cases where nodes are disconnected/reconnected, source or EVR change, etc...
+- Use attributes to change dxva2 settings for MFVideoChromaSubsampling/MFNominalRange/MFVideoTransferMatrix/MFVideoPrimaries, etc...
+- Handle DXVA2_E_NEW_VIDEO_DEVICE (m_pDeviceManager->TestDevice).
+- Adapt TimeStampScheduler to handle free surface.
+- Change code to handle some of those cases : new EVR/Source connection.
