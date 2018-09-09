@@ -1,0 +1,6 @@
+//----------------------------------------------------------------------------------------------
+// ToDo
+//----------------------------------------------------------------------------------------------
+
+- Alpha version : For now there is problem with sound. See CreateSample in MFA52Source.cpp.
+- I just test it with two channels.
