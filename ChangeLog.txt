@@ -1,0 +1,352 @@
+//------------------------------------------------------------------------------------------------------------------
+09/09/2018
+
+- Update project to Visual Studio 2017 Community
+
+
+//------------------------------------------------------------------------------------------------------------------
+04/07/2015
+
+- Update project to Visual Studio 2013 Community
+
+- Update MFTDxva2Decoder 1.1.0.0 (beta)
+
+* the decoder is now able to decode mpeg1/2 format with dxva2
+
+- Update MFNodePlayer 1.11.3.3 (beta)
+
+* add code to use MFTDxva2Decoder with file drop
+
+- Update MFSrMpeg2Splitter 1.3.1.0 (beta)
+
+* add seek functionality (this introduces a bug : sometimes when loading file)
+
+
+//------------------------------------------------------------------------------------------------------------------
+15/11/2014
+
+- Update MFTCudaDecoder 1.4.0.0 (beta)
+
+* Handle video timestamp
+
+- Update MFSrMpeg2Splitter 1.2.1.0 (beta)
+
+* Handle decoded time stamp
+
+- Update MFTMpeg12Decoder 1.1.0.0 (beta)
+
+* Few change for later check audio/video synch (according to MFTCudaDecoder)
+
+
+//------------------------------------------------------------------------------------------------------------------
+01/11/2014
+
+- Update MFNodePlayer 1.10.3.3 (beta)
+
+* Bug in CMFNodeForm::OnDrop : allocate MAX_PATH * sizeof(WCHAR), not just the name file size
+* Set Autolock in CMFNodePlayer::Invoke for m_state (design has to be changed...)
+* Add a define to test cuda decoder with drag and drop
+
+- Update MFTCudaDecoder 1.3.0.0 (beta)
+
+* B frames are handle correctly
+* Code has been refactored
+* note:
+. Cuda never decodes the first I frame (don't know why)
+. Now there is a latency before presenting the first frame (20 frames), perhaps we can improve this
+
+
+//------------------------------------------------------------------------------------------------------------------
+17/10/2014
+
+- Update MFNodePlayer 1.9.2.3 (beta)
+
+* Add free session to load a file by drag and drop
+* No media session blocking on loading failure (create media source and topology before media session)
+* Change buttons text to "Select".
+* VideoRendererSession : add option to select decoder (cuda or not)
+
+- Update MFSrMpeg2Splitter 1.1.1.0 (beta)
+
+* update MFByteStream.cpp to be used by both topoedit and MFNodePlayer
+
+- Update MFTCudaDecoder 1.2.0.0 (beta)
+
+* Change project properties to Cuda SDK 6.0
+* Add output media type YV12, to be used by MFNodePlayer (video renderer session)
+
+
+//------------------------------------------------------------------------------------------------------------------
+10/05/2014
+
+- Update MFNodePlayer 1.9.2.2 (beta)
+
+* Refactor MFNodeForm
+* Improve MediaSession event handling
+* No more memory leaks, on loading failure
+
+- Update MFSkDxva2Renderer 1.1.0.0 (beta)
+
+* To be registered as MFT_CATEGORY_OTHER
+
+- Update MFSkVideoRenderer 1.3.0.1 (beta)
+
+* To be registered as MFT_CATEGORY_OTHER
+
+- Update MFSkImageWriter 1.1.0.0 (beta)
+
+* To be registered as MFT_CATEGORY_OTHER
+
+- Update MFSkJpegHttpStreamer 1.1.1.0 (beta)
+
+* To be registered as MFT_CATEGORY_OTHER
+
+
+//------------------------------------------------------------------------------------------------------------------
+05/05/2014
+
+- Adding MFSkDxva2Renderer 1.0.0.0 (beta)
+
+- Update MFSrFlvSplitter 1.2.1.1 (beta)
+
+* The small bug in CreateVideoSample wasn't a bug...
+
+- Update MFSkVideoRenderer 1.2.0.1 (beta)
+
+- Update MFTCudaDecoder 1.1.0.0 (beta)
+
+- Update MFTMpeg2Decoder 1.2.0.3 (beta)
+
+- Update MFNodePlayer 1.8.1.2 (beta)
+
+* Adding Dxva2 session
+
+- Move MFSafeQueue.h in common
+
+- Rename Mpeg2Lib in LibMpeg2, to be compiled before MFTMpeg2Decoder
+
+
+//------------------------------------------------------------------------------------------------------------------
+30/04/2014
+
+- Update MFNodePlayer 1.7.1.2 (beta)
+
+* Adding audio/video capture session (show how aggregate capture source)
+
+- Update MFSrFlvSplitter 1.2.0.1 (beta)
+
+* A small bug in CreateVideoSample
+
+
+//------------------------------------------------------------------------------------------------------------------
+28/04/2014
+
+- Update MFNodePlayer 1.6.1.2 (beta)
+
+* Adding sequencer source sample
+
+- Update MFSkVideoRenderer 1.1.0.0 (beta)
+
+* fx file is loaded as resource.
+
+- Update MFSrFlvSplitter 1.1.0.0 (beta)
+
+* Adding audio/video stream selection
+
+
+//------------------------------------------------------------------------------------------------------------------
+21/04/2014
+
+- Adding MFSkVideoRenderer 1.0.0.0 (beta)
+
+- Adding Mp3Decoding
+
+- Update MFNodePlayer 1.5.1.2 (beta)
+
+* Adding Renderer Session to use MFSkVideoRenderer
+* Adding controls to handle shader parameters from the MFSkVideoRenderer
+
+
+//------------------------------------------------------------------------------------------------------------------
+30/03/2014
+
+- Adding MFSrA52Decoder 1.0.0.0 (alpha)
+
+- Adding MFTA52Decoder 1.0.0.0 (alpha)
+
+- Update MFNodePlayer 1.4.1.1 (beta)
+
+* Adding Flv Session and an editbox to select the flv file
+
+- Update MFSrFlvSplitter 1.1.0.0 (beta)
+
+* Disable one header check, see ParseHeader in FlvParser.cpp
+
+- Update MFSrMpeg2Splitter 1.1.0.0 (beta)
+
+* Adding vob file extension
+
+
+//------------------------------------------------------------------------------------------------------------------
+30/03/2014
+
+- Adding MFSrMpeg2Splitter 1.0.0.0 (beta)
+
+- Adding MFSkImageWriter 1.0.0.0 (beta)
+
+- Adding MFTCudaDecoder 1.0.0.0 (beta) (compiled with Cuda SDK v5.5)
+
+- Adding MFTDxva2Decoder 1.0.0.0 (alpha) (project stopped)
+
+- Adding MFSrFlvSplitter 1.0.0.0 (beta)
+
+- Adding MFTVp6Decoder 1.0.0.0 (beta)
+
+- Update all StdAfx.h according to MFInclude.h
+
+- MFSrMpeg12Decoder 1.1.1.0 (beta)
+
+* Return failure if layer is 3
+
+- Update common project files
+
+* adding MFTraceSample.h
+* adding CLSID in MFNodeGuid.h
+* Change MFBuffer.h to be more robust
+* adding CMFWriteFile in MFFile.h
+* Change MFInclude.h to handle more common include files
+* Adding MFDxva2String in MFTrace.h
+* Adding ClockStateString in MFState.h
+* Adding MFReadParam.h
+* Adding MFByteStream.h
+
+
+//------------------------------------------------------------------------------------------------------------------
+16/01/2014
+
+- Update MFNodePlayer 1.3.1.1 (beta)
+
+* Adding Screen Session and HttpStreamer Session (Jpeg)
+* Adding Check for registered dll
+* Adding MFNodePlayer_Topology.cpp
+
+
+//------------------------------------------------------------------------------------------------------------------
+14/01/2014
+
+- Update MFNodePlayer 1.1.1.1 (beta)
+
+* Adding MF_TRACE_PIPELINE_EVENT
+* Handle cursor
+* If using stop then play, the MediaSession did not restart
+
+- Update MFTVideoMpeg2 1.1.0.3 (beta)
+
+* Reset MEDIASUBTYPE_MPEG1Payload to keep compatibility with Mpeg1Source from SDK
+
+
+//------------------------------------------------------------------------------------------------------------------
+01/12/2013
+
+- Update MFSkJpegHttpStreamer 1.0.1.0 (beta)
+
+* Fix a big problem with reference counting. The design was to reuse the sink after ShutDown.
+It was a bad idea due to circular reference counting (between Sink and StreamSink).
+When ShutDown is called, MediaFoundation is designing to delete the sink after. Not to reuse it.
+
+
+//------------------------------------------------------------------------------------------------------------------
+18/11/2013
+
+- Adding MFSkJpegHttpStreamer 1.0.0.0 (beta)
+
+- Update MFTJpegEncoder 1.1.0.0 (beta) :
+
+Change SetEndPosition in CJpegStream::Write.
+Adding m_bHaveImage
+
+- Update MFSVersion in MFSrScreenCapture and Trace
+
+- Update MFSVersion in MFSrMpeg12Decoder
+
+- Update MFInclude/MFLogging/MFMacro/MFNodeGuid
+
+- Reset the Common folder in the solution and all the ToDo.txt
+
+
+//------------------------------------------------------------------------------------------------------------------
+18/11/2013
+
+- Adding MFTJpegEncoder 1.0.0.0 (beta)
+
+* I did not test it. I have to write the sink that will stream the jpeg data. Coming soon
+
+- Rename a lot of project. See MFNodeGuid.h
+
+- Update MFTMpeg2Decoder 1.1.0.2 (beta)
+
+* When frame size is not multiple of 16, we get wrong image. It's because the decoder use 16 bytes alignment.
+Adding GetWidth from the decoder, and Mpeg2CopyFrameYV12Stride to setup YUV correctly.
+
+- Update MFTMpegAudioDecoder 1.0.0.1 (beta)
+
+* Activate m_bValidTime to use splitter source time, if valid. When not use, the audio was not sync
+
+- Update MFBuffer.h
+
+* in Reserve, change GetBufferSize by m_dwTotalSize. We must check the total size, not the current
+buffer size.
+* add some check for DWORD overflow
+
+- Update some common files to handle more things
+
+
+//------------------------------------------------------------------------------------------------------------------
+26/07/2013
+
+- Adding LibMpegAudio
+
+* original source code from lipmp2dec and mpeg123 rewritten in C++
+* decode mp1 and mp2 audio format
+* does not handle free format
+
+- Adding MFSrMpegAudio 1.0.0.0 (beta)
+
+- Adding MFTMpegAudioDecoder 1.0.0.0 (beta)
+
+- Adding MFAsyncCallback.h and MFBuffer.h
+
+
+//------------------------------------------------------------------------------------------------------------------
+20/05/2013
+
+- Common project files are now in only one diretory
+- Enhanced Logging mediatype/guid/clsid/etc...
+- New file for MFNode Guid
+
+- Adding MFTAudioMixer 1.0.0.0 (beta)
+
+- Adding MFSrScreenCapture 1.0.0.0 (beta)
+
+- Update MFTVideoMpeg2 1.1.0.1 (beta)
+
+* to be compliant with new common project files
+
+- Update MFKinectSource 1.1.0.0 (beta)
+
+* now relative to Kinect SDK V1.7
+* to be compliant with new common project files
+* adding GNU General Public License header (oups...)
+
+
+//------------------------------------------------------------------------------------------------------------------
+28/10/2012
+
+- Adding MFKinectSource 1.0.0.0 (beta)
+
+- Update MFTVideoMpeg2 1.0.0.1 (beta)
+
+* remove BaseObject in Mpeg2Decoder.h. Not needed because Mpeg2Decoder is an internal class of MFTMpeg2Decoder
+* add (std::nothrow) to all new allocation class
+* Configuration for release mode
+

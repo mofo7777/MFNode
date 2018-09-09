@@ -1,0 +1,208 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 2013
+VisualStudioVersion = 12.0.31101.0
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "MFSrKinectCapture", "MFSrKinectCapture\MFSrKinectCapture.vcxproj", "{C0FE33EF-BCF0-4715-BEDA-85B67336BCEE}"
+EndProject
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "MFSrMpeg12Decoder", "MFSrMpeg12Decoder\MFSrMpeg12Decoder.vcxproj", "{44A1B9FB-DA01-4B88-B81C-D98CFBDF509E}"
+	ProjectSection(ProjectDependencies) = postProject
+		{B5AB0330-1A56-4C45-843D-39C7FFD7CB66} = {B5AB0330-1A56-4C45-843D-39C7FFD7CB66}
+	EndProjectSection
+EndProject
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "MFSrScreenCapture", "MFSrScreenCapture\MFSrScreenCapture.vcxproj", "{7658FEC6-CE7F-4B91-A53B-CC3CD547BC92}"
+EndProject
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "MFTJpegEncoder", "MFTJpegEncoder\MFTJpegEncoder.vcxproj", "{BCC35BA2-8983-461F-AF19-E7092BD60B36}"
+EndProject
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "MFTMpeg2Decoder", "MFTMpeg2Decoder\MFTMpeg2Decoder.vcxproj", "{E7B0E883-EC20-40BE-AABB-56CDB9AE828B}"
+	ProjectSection(ProjectDependencies) = postProject
+		{B9BD7671-44EB-42A8-A43C-6793E1D1B394} = {B9BD7671-44EB-42A8-A43C-6793E1D1B394}
+	EndProjectSection
+EndProject
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "MFTMpeg12Decoder", "MFTMpeg12Decoder\MFTMpeg12Decoder.vcxproj", "{B14AB973-603A-4FE0-8A8E-7FC85FBCB40D}"
+	ProjectSection(ProjectDependencies) = postProject
+		{B5AB0330-1A56-4C45-843D-39C7FFD7CB66} = {B5AB0330-1A56-4C45-843D-39C7FFD7CB66}
+	EndProjectSection
+EndProject
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "MFTWaveMixer", "MFTWaveMixer\MFTWaveMixer.vcxproj", "{7682D63B-4B08-4A87-9A17-7823B84F5786}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Common", "Common", "{4B15BD7F-3519-4690-8ADD-8F305C13D51D}"
+	ProjectSection(SolutionItems) = preProject
+		Common\MFAsyncCallback.h = Common\MFAsyncCallback.h
+		Common\MFAsyncState.h = Common\MFAsyncState.h
+		Common\MFBuffer.h = Common\MFBuffer.h
+		Common\MFClassFactory.h = Common\MFClassFactory.h
+		Common\MFCriticSection.h = Common\MFCriticSection.h
+		Common\MFFile.h = Common\MFFile.h
+		Common\MFGrowArray.h = Common\MFGrowArray.h
+		Common\MFInclude.h = Common\MFInclude.h
+		Common\MFLinkList.h = Common\MFLinkList.h
+		Common\MFLogging.h = Common\MFLogging.h
+		Common\MFLogGuid.h = Common\MFLogGuid.h
+		Common\MFLogMediaType.h = Common\MFLogMediaType.h
+		Common\MFMacro.h = Common\MFMacro.h
+		Common\MFMpeg2Definition.h = Common\MFMpeg2Definition.h
+		Common\MFNodeEnum.h = Common\MFNodeEnum.h
+		Common\MFNodeGuid.h = Common\MFNodeGuid.h
+		Common\MFOperationQueue.h = Common\MFOperationQueue.h
+		Common\MFReadParam.h = Common\MFReadParam.h
+		Common\MFRegistry.h = Common\MFRegistry.h
+		Common\MFState.h = Common\MFState.h
+		Common\MFTExternTrace.h = Common\MFTExternTrace.h
+		Common\MFTime.h = Common\MFTime.h
+		Common\MFTinyMap.h = Common\MFTinyMap.h
+		Common\MFTrace.h = Common\MFTrace.h
+		Common\MFTraceSample.h = Common\MFTraceSample.h
+	EndProjectSection
+EndProject
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "MFSkJpegHttpStreamer", "MFSkJpegHttpStreamer\MFSkJpegHttpStreamer.vcxproj", "{DB1C97CC-298A-4ACC-B6B5-1ABD7532DBEE}"
+EndProject
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "MFNodePlayer", "MFNodePlayer\MFNodePlayer.vcxproj", "{B5177AE8-7412-4BAE-88DD-20F976AB79B2}"
+	ProjectSection(ProjectDependencies) = postProject
+		{D725D20C-0631-4880-8CBC-A671AD0FFB1F} = {D725D20C-0631-4880-8CBC-A671AD0FFB1F}
+		{8368DF46-B54B-4231-9494-41D7620E4EF5} = {8368DF46-B54B-4231-9494-41D7620E4EF5}
+	EndProjectSection
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Docs", "Docs", "{FD8D6022-8117-48AB-B932-54A755B87928}"
+	ProjectSection(SolutionItems) = preProject
+		ChangeLog.txt = ChangeLog.txt
+		README.txt = README.txt
+	EndProjectSection
+EndProject
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "MFSkImageWriter", "MFSkImageWriter\MFSkImageWriter.vcxproj", "{F6735A86-59A4-4684-91EB-CE119EDFE76C}"
+EndProject
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "MFSrFlvSplitter", "MFSrFlvSplitter\MFSrFlvSplitter.vcxproj", "{760A1A16-F134-43B2-B62E-E5463BBA7BA6}"
+EndProject
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "MFTVp6Decoder", "MFTVp6Decoder\MFTVp6Decoder.vcxproj", "{789E74E2-DA8A-4F54-99F7-5BA5507C8B1B}"
+EndProject
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "MFTCudaDecoder", "MFTCudaDecoder\MFTCudaDecoder.vcxproj", "{6994EF72-C4B2-4C2F-9CDC-EC8B107DE8D1}"
+EndProject
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "MFTDxva2Decoder", "MFTDxva2Decoder\MFTDxva2Decoder.vcxproj", "{70438389-E5CC-46A6-BE6B-A8512F76E180}"
+EndProject
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "MFSrMpeg2Splitter", "MFSrMpeg2Splitter\MFSrMpeg2Splitter.vcxproj", "{42F0CA87-1D2E-4698-AC73-AD148141A6C8}"
+EndProject
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "MFSrA52Decoder", "MFSrA52Decoder\MFSrA52Decoder.vcxproj", "{FD5658EC-9B03-4260-8B53-01554562808C}"
+	ProjectSection(ProjectDependencies) = postProject
+		{F46D4E62-E84C-4CB0-BAA4-9D473768422F} = {F46D4E62-E84C-4CB0-BAA4-9D473768422F}
+	EndProjectSection
+EndProject
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "MFTA52Decoder", "MFTA52Decoder\MFTA52Decoder.vcxproj", "{6FA3BDFC-C3E2-477E-864E-1137F02D76ED}"
+	ProjectSection(ProjectDependencies) = postProject
+		{F46D4E62-E84C-4CB0-BAA4-9D473768422F} = {F46D4E62-E84C-4CB0-BAA4-9D473768422F}
+	EndProjectSection
+EndProject
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "MFSkVideoRenderer", "MFSkVideoRenderer\MFSkVideoRenderer.vcxproj", "{D725D20C-0631-4880-8CBC-A671AD0FFB1F}"
+EndProject
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "Mp3Decoding", "Mp3Decoding\Mp3Decoding.vcxproj", "{B6D339D8-E35C-4D47-9AB0-49B925FAE822}"
+EndProject
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "LibMpeg2", "LibMpeg2\LibMpeg2.vcxproj", "{B9BD7671-44EB-42A8-A43C-6793E1D1B394}"
+EndProject
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "MFSkDxva2Renderer", "MFSkDxva2Renderer\MFSkDxva2Renderer.vcxproj", "{8368DF46-B54B-4231-9494-41D7620E4EF5}"
+EndProject
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "LibA52Audio", "LibA52Audio\LibA52Audio.vcxproj", "{F46D4E62-E84C-4CB0-BAA4-9D473768422F}"
+EndProject
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "LibMpegAudio", "LibMpegAudio\LibMpegAudio.vcxproj", "{B5AB0330-1A56-4C45-843D-39C7FFD7CB66}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Win32 = Debug|Win32
+		Release|Win32 = Release|Win32
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{C0FE33EF-BCF0-4715-BEDA-85B67336BCEE}.Debug|Win32.ActiveCfg = Debug|Win32
+		{C0FE33EF-BCF0-4715-BEDA-85B67336BCEE}.Debug|Win32.Build.0 = Debug|Win32
+		{C0FE33EF-BCF0-4715-BEDA-85B67336BCEE}.Release|Win32.ActiveCfg = Release|Win32
+		{C0FE33EF-BCF0-4715-BEDA-85B67336BCEE}.Release|Win32.Build.0 = Release|Win32
+		{44A1B9FB-DA01-4B88-B81C-D98CFBDF509E}.Debug|Win32.ActiveCfg = Debug|Win32
+		{44A1B9FB-DA01-4B88-B81C-D98CFBDF509E}.Debug|Win32.Build.0 = Debug|Win32
+		{44A1B9FB-DA01-4B88-B81C-D98CFBDF509E}.Release|Win32.ActiveCfg = Release|Win32
+		{44A1B9FB-DA01-4B88-B81C-D98CFBDF509E}.Release|Win32.Build.0 = Release|Win32
+		{7658FEC6-CE7F-4B91-A53B-CC3CD547BC92}.Debug|Win32.ActiveCfg = Debug|Win32
+		{7658FEC6-CE7F-4B91-A53B-CC3CD547BC92}.Debug|Win32.Build.0 = Debug|Win32
+		{7658FEC6-CE7F-4B91-A53B-CC3CD547BC92}.Release|Win32.ActiveCfg = Release|Win32
+		{7658FEC6-CE7F-4B91-A53B-CC3CD547BC92}.Release|Win32.Build.0 = Release|Win32
+		{BCC35BA2-8983-461F-AF19-E7092BD60B36}.Debug|Win32.ActiveCfg = Debug|Win32
+		{BCC35BA2-8983-461F-AF19-E7092BD60B36}.Debug|Win32.Build.0 = Debug|Win32
+		{BCC35BA2-8983-461F-AF19-E7092BD60B36}.Release|Win32.ActiveCfg = Release|Win32
+		{BCC35BA2-8983-461F-AF19-E7092BD60B36}.Release|Win32.Build.0 = Release|Win32
+		{E7B0E883-EC20-40BE-AABB-56CDB9AE828B}.Debug|Win32.ActiveCfg = Debug|Win32
+		{E7B0E883-EC20-40BE-AABB-56CDB9AE828B}.Debug|Win32.Build.0 = Debug|Win32
+		{E7B0E883-EC20-40BE-AABB-56CDB9AE828B}.Release|Win32.ActiveCfg = Release|Win32
+		{E7B0E883-EC20-40BE-AABB-56CDB9AE828B}.Release|Win32.Build.0 = Release|Win32
+		{B14AB973-603A-4FE0-8A8E-7FC85FBCB40D}.Debug|Win32.ActiveCfg = Debug|Win32
+		{B14AB973-603A-4FE0-8A8E-7FC85FBCB40D}.Debug|Win32.Build.0 = Debug|Win32
+		{B14AB973-603A-4FE0-8A8E-7FC85FBCB40D}.Release|Win32.ActiveCfg = Release|Win32
+		{B14AB973-603A-4FE0-8A8E-7FC85FBCB40D}.Release|Win32.Build.0 = Release|Win32
+		{7682D63B-4B08-4A87-9A17-7823B84F5786}.Debug|Win32.ActiveCfg = Debug|Win32
+		{7682D63B-4B08-4A87-9A17-7823B84F5786}.Debug|Win32.Build.0 = Debug|Win32
+		{7682D63B-4B08-4A87-9A17-7823B84F5786}.Release|Win32.ActiveCfg = Release|Win32
+		{7682D63B-4B08-4A87-9A17-7823B84F5786}.Release|Win32.Build.0 = Release|Win32
+		{DB1C97CC-298A-4ACC-B6B5-1ABD7532DBEE}.Debug|Win32.ActiveCfg = Debug|Win32
+		{DB1C97CC-298A-4ACC-B6B5-1ABD7532DBEE}.Debug|Win32.Build.0 = Debug|Win32
+		{DB1C97CC-298A-4ACC-B6B5-1ABD7532DBEE}.Release|Win32.ActiveCfg = Release|Win32
+		{DB1C97CC-298A-4ACC-B6B5-1ABD7532DBEE}.Release|Win32.Build.0 = Release|Win32
+		{B5177AE8-7412-4BAE-88DD-20F976AB79B2}.Debug|Win32.ActiveCfg = Debug|Win32
+		{B5177AE8-7412-4BAE-88DD-20F976AB79B2}.Debug|Win32.Build.0 = Debug|Win32
+		{B5177AE8-7412-4BAE-88DD-20F976AB79B2}.Release|Win32.ActiveCfg = Release|Win32
+		{B5177AE8-7412-4BAE-88DD-20F976AB79B2}.Release|Win32.Build.0 = Release|Win32
+		{F6735A86-59A4-4684-91EB-CE119EDFE76C}.Debug|Win32.ActiveCfg = Debug|Win32
+		{F6735A86-59A4-4684-91EB-CE119EDFE76C}.Debug|Win32.Build.0 = Debug|Win32
+		{F6735A86-59A4-4684-91EB-CE119EDFE76C}.Release|Win32.ActiveCfg = Release|Win32
+		{F6735A86-59A4-4684-91EB-CE119EDFE76C}.Release|Win32.Build.0 = Release|Win32
+		{760A1A16-F134-43B2-B62E-E5463BBA7BA6}.Debug|Win32.ActiveCfg = Debug|Win32
+		{760A1A16-F134-43B2-B62E-E5463BBA7BA6}.Debug|Win32.Build.0 = Debug|Win32
+		{760A1A16-F134-43B2-B62E-E5463BBA7BA6}.Release|Win32.ActiveCfg = Release|Win32
+		{760A1A16-F134-43B2-B62E-E5463BBA7BA6}.Release|Win32.Build.0 = Release|Win32
+		{789E74E2-DA8A-4F54-99F7-5BA5507C8B1B}.Debug|Win32.ActiveCfg = Debug|Win32
+		{789E74E2-DA8A-4F54-99F7-5BA5507C8B1B}.Debug|Win32.Build.0 = Debug|Win32
+		{789E74E2-DA8A-4F54-99F7-5BA5507C8B1B}.Release|Win32.ActiveCfg = Release|Win32
+		{789E74E2-DA8A-4F54-99F7-5BA5507C8B1B}.Release|Win32.Build.0 = Release|Win32
+		{6994EF72-C4B2-4C2F-9CDC-EC8B107DE8D1}.Debug|Win32.ActiveCfg = Debug|Win32
+		{6994EF72-C4B2-4C2F-9CDC-EC8B107DE8D1}.Debug|Win32.Build.0 = Debug|Win32
+		{6994EF72-C4B2-4C2F-9CDC-EC8B107DE8D1}.Release|Win32.ActiveCfg = Release|Win32
+		{6994EF72-C4B2-4C2F-9CDC-EC8B107DE8D1}.Release|Win32.Build.0 = Release|Win32
+		{70438389-E5CC-46A6-BE6B-A8512F76E180}.Debug|Win32.ActiveCfg = Debug|Win32
+		{70438389-E5CC-46A6-BE6B-A8512F76E180}.Debug|Win32.Build.0 = Debug|Win32
+		{70438389-E5CC-46A6-BE6B-A8512F76E180}.Release|Win32.ActiveCfg = Release|Win32
+		{70438389-E5CC-46A6-BE6B-A8512F76E180}.Release|Win32.Build.0 = Release|Win32
+		{42F0CA87-1D2E-4698-AC73-AD148141A6C8}.Debug|Win32.ActiveCfg = Debug|Win32
+		{42F0CA87-1D2E-4698-AC73-AD148141A6C8}.Debug|Win32.Build.0 = Debug|Win32
+		{42F0CA87-1D2E-4698-AC73-AD148141A6C8}.Release|Win32.ActiveCfg = Release|Win32
+		{42F0CA87-1D2E-4698-AC73-AD148141A6C8}.Release|Win32.Build.0 = Release|Win32
+		{FD5658EC-9B03-4260-8B53-01554562808C}.Debug|Win32.ActiveCfg = Debug|Win32
+		{FD5658EC-9B03-4260-8B53-01554562808C}.Debug|Win32.Build.0 = Debug|Win32
+		{FD5658EC-9B03-4260-8B53-01554562808C}.Release|Win32.ActiveCfg = Release|Win32
+		{FD5658EC-9B03-4260-8B53-01554562808C}.Release|Win32.Build.0 = Release|Win32
+		{6FA3BDFC-C3E2-477E-864E-1137F02D76ED}.Debug|Win32.ActiveCfg = Debug|Win32
+		{6FA3BDFC-C3E2-477E-864E-1137F02D76ED}.Debug|Win32.Build.0 = Debug|Win32
+		{6FA3BDFC-C3E2-477E-864E-1137F02D76ED}.Release|Win32.ActiveCfg = Release|Win32
+		{6FA3BDFC-C3E2-477E-864E-1137F02D76ED}.Release|Win32.Build.0 = Release|Win32
+		{D725D20C-0631-4880-8CBC-A671AD0FFB1F}.Debug|Win32.ActiveCfg = Debug|Win32
+		{D725D20C-0631-4880-8CBC-A671AD0FFB1F}.Debug|Win32.Build.0 = Debug|Win32
+		{D725D20C-0631-4880-8CBC-A671AD0FFB1F}.Release|Win32.ActiveCfg = Release|Win32
+		{D725D20C-0631-4880-8CBC-A671AD0FFB1F}.Release|Win32.Build.0 = Release|Win32
+		{B6D339D8-E35C-4D47-9AB0-49B925FAE822}.Debug|Win32.ActiveCfg = Debug|Win32
+		{B6D339D8-E35C-4D47-9AB0-49B925FAE822}.Debug|Win32.Build.0 = Debug|Win32
+		{B6D339D8-E35C-4D47-9AB0-49B925FAE822}.Release|Win32.ActiveCfg = Release|Win32
+		{B6D339D8-E35C-4D47-9AB0-49B925FAE822}.Release|Win32.Build.0 = Release|Win32
+		{B9BD7671-44EB-42A8-A43C-6793E1D1B394}.Debug|Win32.ActiveCfg = Debug|Win32
+		{B9BD7671-44EB-42A8-A43C-6793E1D1B394}.Debug|Win32.Build.0 = Debug|Win32
+		{B9BD7671-44EB-42A8-A43C-6793E1D1B394}.Release|Win32.ActiveCfg = Release|Win32
+		{B9BD7671-44EB-42A8-A43C-6793E1D1B394}.Release|Win32.Build.0 = Release|Win32
+		{8368DF46-B54B-4231-9494-41D7620E4EF5}.Debug|Win32.ActiveCfg = Debug|Win32
+		{8368DF46-B54B-4231-9494-41D7620E4EF5}.Debug|Win32.Build.0 = Debug|Win32
+		{8368DF46-B54B-4231-9494-41D7620E4EF5}.Release|Win32.ActiveCfg = Release|Win32
+		{8368DF46-B54B-4231-9494-41D7620E4EF5}.Release|Win32.Build.0 = Release|Win32
+		{F46D4E62-E84C-4CB0-BAA4-9D473768422F}.Debug|Win32.ActiveCfg = Debug|Win32
+		{F46D4E62-E84C-4CB0-BAA4-9D473768422F}.Debug|Win32.Build.0 = Debug|Win32
+		{F46D4E62-E84C-4CB0-BAA4-9D473768422F}.Release|Win32.ActiveCfg = Release|Win32
+		{F46D4E62-E84C-4CB0-BAA4-9D473768422F}.Release|Win32.Build.0 = Release|Win32
+		{B5AB0330-1A56-4C45-843D-39C7FFD7CB66}.Debug|Win32.ActiveCfg = Debug|Win32
+		{B5AB0330-1A56-4C45-843D-39C7FFD7CB66}.Debug|Win32.Build.0 = Debug|Win32
+		{B5AB0330-1A56-4C45-843D-39C7FFD7CB66}.Release|Win32.ActiveCfg = Release|Win32
+		{B5AB0330-1A56-4C45-843D-39C7FFD7CB66}.Release|Win32.Build.0 = Release|Win32
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+EndGlobal
