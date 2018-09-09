@@ -1,0 +1,19 @@
+//----------------------------------------------------------------------------------------------
+// ToDo
+//----------------------------------------------------------------------------------------------
+
+- In debug mode, stopping the MediaSource takes a long time (not try in release mode).
+- Refactoring code.
+- Make the MediaSource in asynchrone mode (scheme handler and stream).
+- There is memory leaks when a stream is deselected or if an error occurs.
+- Check lock when stream handles source (See it after asynchrone mode).
+- Provide all Mediatype that Kinect Handle.
+- Handle mediatype change during play/pause or stop (if possible).
+- Provide a second video stream for DepthBuffer.
+- See custom mediatype for skeleton stream and a custom presenter.
+- Why not handle multiple Kinect with multiple stream.
+- Perhaps need to handle Gap in the Kinect stream.
+- Handle activation stream, discontinuity.
+- See if there is a difference between QueueEventWithIUnknown and QueueEventParamUnk.
+- Handle device lost, Kinect can be disconnected.
+- There are a lot of things to add, due to Kinect capabilities...
