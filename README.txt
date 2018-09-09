@@ -70,8 +70,8 @@ it can't be use with topoedit, because of a bug in topoedit. You can use MFNodeP
 
 With Visual Studio i use those parameters (Tools->Options->Editor Text->C/C++) :
 
-- Tab size         = 1
-- Withdrawals size = 2
+- Tab size         = 4
+- Withdrawals size = 4
 - All project are only use in debug mode. I don't use release mode, because for now, MFNode Project is in Beta version.
 
 
