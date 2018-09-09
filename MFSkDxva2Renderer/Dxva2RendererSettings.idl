@@ -1,0 +1,43 @@
+//--------------------------------------------------------------------------------------
+// Dxva2RendererSettings.idl
+//--------------------------------------------------------------------------------------
+import "unknwn.idl";
+
+interface IMFDxva2RendererSettings;
+
+//--------------------------------------------------------------------------------------
+// IMFDxva2RendererSettings
+//--------------------------------------------------------------------------------------
+[ local, object, uuid(F89DFD98-7E7A-43B2-BDD3-9071472CBB8B),
+  helpstring("IMFDxva2RendererSettings Interface"), pointer_default(unique) ]
+
+interface IMFDxva2RendererSettings : IUnknown{
+
+		HRESULT SetBrightness([in] BOOL, [in] INT);
+		HRESULT GetBrightness([out] BOOL*, [out] INT*, [out] INT*, [out] INT*);
+		HRESULT SetContrast([in] BOOL, [in] INT);
+		HRESULT GetContrast([out] BOOL*, [out] INT*, [out] INT*, [out] INT*);
+		HRESULT SetHue([in] BOOL, [in] INT);
+		HRESULT GetHue([out] BOOL*, [out] INT*, [out] INT*, [out] INT*);
+		HRESULT SetSaturation([in] BOOL, [in] INT);
+		HRESULT GetSaturation([out] BOOL*, [out] INT*, [out] INT*, [out] INT*);
+		HRESULT SetNoiseReduction([in] BOOL, [in] INT);
+		HRESULT GetNoiseReduction([out] BOOL*, [out] INT*, [out] INT*, [out] INT*);
+		HRESULT SetEdgeEnhancement([in] BOOL, [in] INT);
+		HRESULT GetEdgeEnhancement([out] BOOL*, [out] INT*, [out] INT*, [out] INT*);
+		HRESULT SetAnamorphicScaling([in] BOOL, [in] INT);
+		HRESULT GetAnamorphicScaling([out] BOOL*, [out] INT*, [out] INT*, [out] INT*);
+};
+
+//--------------------------------------------------------------------------------------
+// Library and objects
+//--------------------------------------------------------------------------------------
+[ uuid(30808A08-EEE7-4BD8-9BD9-64343C1DA2D8), version(1.0), helpstring("Dxva2RendererSettings 1.0 Type Library") ]
+
+library Dxva2RendererSettingsLib{
+
+  // MFDxva2RendererSettings
+  [ uuid(1BA26999-60BF-46F5-84C6-8F2BA53617A1), helpstring("MFDxva2RendererSettings Class") ]
+
+  coclass MFDxva2RendererSettings{ [default] interface IMFDxva2RendererSettings; };
+};
