@@ -1,0 +1,12 @@
+//----------------------------------------------------------------------------------------------
+// ToDo
+//----------------------------------------------------------------------------------------------
+
+- MFNodePlayer handles session state. It should handle player state, and wave mixer session should handle session state.
+
+- WaveMixerSession does not handle correctly critic section. A lot are missing and with session state, it will be better
+to handle things correctly.
+
+- Pause to Play with flv session is very long to restart. I think a problem with Flv Source.
+
+- Need to understand what is MF_E_MULTIPLE_BEGIN. It sometimes happens (perhaps because of macro).
