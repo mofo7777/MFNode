@@ -1,0 +1,10 @@
+//----------------------------------------------------------------------------------------------
+// ToDo
+//----------------------------------------------------------------------------------------------
+
+- Check memory usage
+- Check memory leaks
+- Check special flag
+
+- Check or implement dynamic reconnexion
+- Check or implement for SSE2/SSE3 for I420/YV12
