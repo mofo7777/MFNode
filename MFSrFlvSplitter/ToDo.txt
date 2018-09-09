@@ -1,0 +1,8 @@
+//----------------------------------------------------------------------------------------------
+// ToDo
+//----------------------------------------------------------------------------------------------
+
+- Try to found if h263 decoding is possible with Windows Seven.
+- Refactor flv parser.
+- mpeg123 is same as Mpeg2 Splitter, add to common files.
+- the flv must have audio and video stream. Handle cases one audio stream or one video stream.
