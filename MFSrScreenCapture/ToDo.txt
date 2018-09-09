@@ -1,0 +1,13 @@
+//----------------------------------------------------------------------------------------------
+// ToDo
+//----------------------------------------------------------------------------------------------
+
+-> CScreenCapture::CreateVideoMediaType
+
+-> Get Video Frame Size eg : Screen Size
+
+-> CScreenCaptureStream::CreateScreenVideoSample
+
+-> Make it asynchronous : it seems that it takes long time to go from pause/stop states to play state.
+
+-> When stopping the source, two Microsoft threads exit with code 0x1.
