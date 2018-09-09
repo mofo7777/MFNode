@@ -1,0 +1,11 @@
+//----------------------------------------------------------------------------------------------
+// ToDo
+//----------------------------------------------------------------------------------------------
+
+- Check ratio on input type
+- Handle non progressive frame
+- Present first ready frame quickly
+- Also first cuda frame is never correctly decoded by cuda decoder...
+- Last frame has sometimes bad PTS, and has been already presented...
+- Need to check video timestamp with audio timestamp
+- This new design seems to introduce flickering with EVR : Perhaps this decoder should be asynchronous, due to the way Nvidia GPU behaves.
