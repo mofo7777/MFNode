@@ -1,0 +1,7 @@
+//----------------------------------------------------------------------------------------------
+// ToDo
+//----------------------------------------------------------------------------------------------
+
+- The seek functionality seems to have introduce aleatory bug at loading.
+- Have to rewrite it the same way as flv splitter but keeping async.
+- A lot of other things, to handle DVD format.
