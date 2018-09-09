@@ -1,0 +1,8 @@
+//----------------------------------------------------------------------------------------------
+// ToDo
+//----------------------------------------------------------------------------------------------
+
+- When EndOfStream, we have to render all the samples before exit RendererThread.
+
+- CreateWindow inside a thread is not a good idea. But for first implementation, it seems to be OK.
+We need to implement IMFVideoDisplayControl.

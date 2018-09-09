@@ -1,0 +1,7 @@
+//----------------------------------------------------------------------------------------------
+// ToDo
+//----------------------------------------------------------------------------------------------
+
+- Implement IMFAttributes to be able to change default port.
+- Schedule network send. This sink is rateless.
+- Perhaps change the http server for multiple user.
