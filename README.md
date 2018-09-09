@@ -24,8 +24,8 @@ You will find :
 
 ## Project diretory details
 
-* Common : some files used by differents projects.
-* LibA52Audio : a decoder for ac3 audio format.
+* **Common** : some files used by differents projects.
+* **LibA52Audio** : a decoder for ac3 audio format.
 * LibMpeg2 : http://sourceforge.net/projects/libmpeg2/ (version libmpeg2-0.5.1). It's the original
 project, no modification have been made.
 * LibMpegAudio : a decoder for mp1/mp2 audio format.
