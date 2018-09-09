@@ -1,0 +1,6 @@
+//----------------------------------------------------------------------------------------------
+// ToDo
+//----------------------------------------------------------------------------------------------
+
+- Implement IMFAttributes to be able to change jpeg's encoding quality.
+- Set correct size in GetOutputStreamInfo.
