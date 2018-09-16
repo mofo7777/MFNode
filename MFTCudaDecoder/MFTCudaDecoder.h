@@ -18,7 +18,7 @@
 #ifndef MFTCUDADEOCDER_H
 #define MFTCUDADEOCDER_H
 
-class CMFTCudaDecoder : BaseObject, public IMFTransform{
+class CMFTCudaDecoder : public IMFTransform{
 
 public:
 
