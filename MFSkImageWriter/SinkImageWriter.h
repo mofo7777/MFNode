@@ -18,7 +18,7 @@
 #ifndef MFSKIMAGEWRITER_H
 #define MFSKIMAGEWRITER_H
 
-class CSkinkImageWriter : BaseObject, public IMFMediaSink, public IMFClockStateSink{
+class CSkinkImageWriter : public IMFMediaSink, public IMFClockStateSink{
 
 public:
 
