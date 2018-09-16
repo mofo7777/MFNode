@@ -18,7 +18,7 @@
 #ifndef MFTDXVA2DEOCDER_H
 #define MFTDXVA2DEOCDER_H
 
-class CDxva2Decoder : BaseObject, public IMFTransform, public IMFAsyncCallback{
+class CDxva2Decoder : public IMFTransform, public IMFAsyncCallback{
 
 public:
 
