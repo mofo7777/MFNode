@@ -18,7 +18,7 @@
 #ifndef MFBYTESTREAMHANDLER_H
 #define MFBYTESTREAMHANDLER_H
 
-class CMFByteStreamHandler : BaseObject, public IMFByteStreamHandler, public IMFAsyncCallback{
+class CMFByteStreamHandler : public IMFByteStreamHandler, public IMFAsyncCallback{
 
 public:
 
