@@ -18,7 +18,7 @@
 #ifndef MFA52SOURCE_H
 #define MFA52SOURCE_H
 
-class CMFA52Source : BaseObject, public IMFMediaSource{
+class CMFA52Source : public IMFMediaSource{
 
 public:
 
