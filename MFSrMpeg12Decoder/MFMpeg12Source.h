@@ -18,7 +18,7 @@
 #ifndef MFMPEG12SOURCE_H
 #define MFMPEG12SOURCE_H
 
-class CMFMpeg12Source : BaseObject, public IMFMediaSource{
+class CMFMpeg12Source : public IMFMediaSource{
 
 public:
 
