@@ -18,7 +18,7 @@
 #ifndef STREAMVIDEORENDERER_H
 #define STREAMVIDEORENDERER_H
 
-class CStreamVideoRenderer : BaseObject, public IMFStreamSink, public IMFMediaTypeHandler{
+class CStreamVideoRenderer : public IMFStreamSink, public IMFMediaTypeHandler{
 
 public:
 
