@@ -18,7 +18,7 @@
 #ifndef MFSKJPEGHTTPSTREAMER_H
 #define MFSKJPEGHTTPSTREAMER_H
 
-class CMFSkJpegHttpStreamer : BaseObject, public IMFMediaSink, public IMFClockStateSink{
+class CMFSkJpegHttpStreamer : public IMFMediaSink, public IMFClockStateSink{
 
 public:
 
