@@ -18,7 +18,7 @@
 #ifndef MFSKSTREAMJPEG_H
 #define MFSKSTREAMJPEG_H
 
-class CMFSkStreamJpeg : BaseObject, public IMFStreamSink, public IMFMediaTypeHandler{
+class CMFSkStreamJpeg : public IMFStreamSink, public IMFMediaTypeHandler{
 
 public:
 
