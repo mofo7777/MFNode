@@ -18,7 +18,7 @@
 #ifndef A52DECODER_H
 #define A52DECODER_H
 
-class CA52Decoder : BaseObject, public IMFTransform{
+class CA52Decoder : public IMFTransform{
 
 public:
 
