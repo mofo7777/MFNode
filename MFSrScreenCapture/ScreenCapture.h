@@ -18,7 +18,7 @@
 #ifndef SCREENCAPTURE_H
 #define SCREENCAPTURE_H
 
-class CScreenCapture : BaseObject, public IMFMediaSource{
+class CScreenCapture : public IMFMediaSource{
 
 public:
 
