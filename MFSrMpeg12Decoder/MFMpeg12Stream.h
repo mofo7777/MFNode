@@ -18,7 +18,7 @@
 #ifndef MFMPEG12STREAM_H
 #define MFMPEG12STREAM_H
 
-class CMFMpeg12Stream : BaseObject, public IMFMediaStream{
+class CMFMpeg12Stream : public IMFMediaStream{
 
 public:
 
