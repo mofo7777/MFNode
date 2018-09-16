@@ -18,7 +18,7 @@
 #ifndef MFMPEG2SOURCE_H
 #define MFMPEG2SOURCE_H
 
-class CMFMpeg2Source : BaseObject, public IMFMediaSource, public CMFOperationQueue<CMFSourceOperation>{
+class CMFMpeg2Source : public IMFMediaSource, public CMFOperationQueue<CMFSourceOperation>{
 
 public:
 
