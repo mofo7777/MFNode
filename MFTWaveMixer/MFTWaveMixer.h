@@ -18,7 +18,7 @@
 #ifndef CMFTWAVEMIXER_H
 #define CMFTWAVEMIXER_H
 
-class CMFTWaveMixer : BaseObject, RefCountedObject, public IMFTransform{
+class CMFTWaveMixer : RefCountedObject, public IMFTransform{
 
 public:
 
