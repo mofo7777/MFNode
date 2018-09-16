@@ -18,7 +18,7 @@
 #ifndef CMFTMPEGAUDIODECODER_H
 #define CMFTMPEGAUDIODECODER_H
 
-class CMFTMpegAudioDecoder : BaseObject, public IMFTransform{
+class CMFTMpegAudioDecoder : public IMFTransform{
 
 public:
 
