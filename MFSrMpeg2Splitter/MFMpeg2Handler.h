@@ -18,7 +18,7 @@
 #ifndef MFMPEG2HANDLER_H
 #define MFMPEG2HANDLER_H
 
-class CMFMpeg2Handler : BaseObject, public IMFByteStreamHandler, public IMFAsyncCallback{
+class CMFMpeg2Handler : public IMFByteStreamHandler, public IMFAsyncCallback{
 
 public:
 
