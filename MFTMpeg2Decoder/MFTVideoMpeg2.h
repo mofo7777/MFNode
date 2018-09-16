@@ -18,7 +18,7 @@
 #ifndef MFTVIDEOMPEG2_H
 #define MFTVIDEOMPEG2_H
 
-class CMFTVideoMpeg2 : BaseObject, RefCountedObject, public IMFTransform{
+class CMFTVideoMpeg2 : RefCountedObject, public IMFTransform{
 
 public:
 
