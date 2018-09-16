@@ -18,7 +18,7 @@
 #ifndef FLVSTREAM_H
 #define FLVSTREAM_H
 
-class CFlvStream : BaseObject, public IMFMediaStream{
+class CFlvStream : public IMFMediaStream{
 
 public:
 
