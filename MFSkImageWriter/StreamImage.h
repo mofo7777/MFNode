@@ -18,7 +18,7 @@
 #ifndef STREAMIMAGE_H
 #define STREAMIMAGE_H
 
-class CStreamImage : BaseObject, public IMFStreamSink, public IMFMediaTypeHandler{
+class CStreamImage : public IMFStreamSink, public IMFMediaTypeHandler{
 
 public:
 
