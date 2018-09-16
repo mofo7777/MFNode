@@ -18,7 +18,7 @@
 #ifndef VP6DECODER_H
 #define VP6DECODER_H
 
-class CVp6Decoder : BaseObject, public IMFTransform{
+class CVp6Decoder : public IMFTransform{
 
 public:
 
