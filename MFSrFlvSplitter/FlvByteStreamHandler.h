@@ -18,7 +18,7 @@
 #ifndef FLVBYTESTREAMHANDLER_H
 #define FLVBYTESTREAMHANDLER_H
 
-class CFlvByteStreamHandler : BaseObject, public IMFByteStreamHandler, public IMFAsyncCallback{
+class CFlvByteStreamHandler : public IMFByteStreamHandler, public IMFAsyncCallback{
 
 public:
 
