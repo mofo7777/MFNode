@@ -18,7 +18,7 @@
 #ifndef FLVSOURCE_H
 #define FLVSOURCE_H
 
-class CFlvSource : BaseObject, public IMFMediaSource{
+class CFlvSource : public IMFMediaSource{
 
 public:
 
