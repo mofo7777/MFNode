@@ -18,7 +18,7 @@
 #ifndef SCREENCAPTURESCHEMEHANDLER_H
 #define SCREENCAPTURESCHEMEHANDLER_H
 
-class CScreenCaptureSchemeHandler : BaseObject, public IMFSchemeHandler{
+class CScreenCaptureSchemeHandler : public IMFSchemeHandler{
 
 public:
 
