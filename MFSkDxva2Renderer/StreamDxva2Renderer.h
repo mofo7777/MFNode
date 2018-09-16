@@ -18,7 +18,7 @@
 #ifndef STREAMDXVA2RENDERER_H
 #define STREAMDXVA2RENDERER_H
 
-class CStreamDxva2Renderer : BaseObject, public IMFStreamSink, public IMFMediaTypeHandler{
+class CStreamDxva2Renderer : public IMFStreamSink, public IMFMediaTypeHandler{
 
 public:
 
