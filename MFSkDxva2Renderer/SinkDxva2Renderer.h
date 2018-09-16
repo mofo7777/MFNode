@@ -19,8 +19,7 @@
 #define SINKDXVA2RENDERER_H
 
 class CSinkDxva2Renderer
-	: BaseObject,
-	public IMFMediaSink,
+	: public IMFMediaSink,
 	public IMFClockStateSink,
 	public IMFMediaSinkPreroll,
 	public IMFDxva2RendererSettings
