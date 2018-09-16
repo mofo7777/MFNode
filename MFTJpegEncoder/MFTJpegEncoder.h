@@ -18,7 +18,7 @@
 #ifndef MFTJPEGENCODER_H
 #define MFTJPEGENCODER_H
 
-class CMFTJpegEncoder : BaseObject, public IMFTransform{
+class CMFTJpegEncoder : public IMFTransform{
 
 public:
 
