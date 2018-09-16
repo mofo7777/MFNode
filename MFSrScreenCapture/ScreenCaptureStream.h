@@ -20,7 +20,7 @@
 
 class CScreenCapture;
 
-class CScreenCaptureStream : BaseObject, public IMFMediaStream{
+class CScreenCaptureStream : public IMFMediaStream{
 
 public:
 
