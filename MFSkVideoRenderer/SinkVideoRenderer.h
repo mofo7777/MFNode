@@ -19,7 +19,8 @@
 #define SINKVIDEORENDERER_H
 
 class CSinkVideoRenderer
-	: public IMFMediaSink,
+	: BaseObject,
+	public IMFMediaSink,
 	public IMFClockStateSink,
 	public IMFVideoDisplayControl,
 	public IMFMediaSinkPreroll,
